@@ -1,0 +1,17 @@
+Package: gtayblr
+Title: Adorns gt objects with SI styles
+Version: 0.0.0.9000
+Authors@R: 
+    person("Tim", "Essam", , "tim.essam@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: gtayblr offers an assortment of pre-set SI styles to adorn gt objects.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports: 
+    dplyr,
+    glitr,
+    gt,
+    gtExtras
