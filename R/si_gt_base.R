@@ -65,7 +65,7 @@ si_gt_base <- function(gt_object,
       locations = gt::cells_body()
     ) %>% # When groupname_col is specified, format headers
     gt::tab_style(
-      style = cell_text(
+      style = gt::cell_text(
         color = table_font_color, font = gt::google_font(table_font), weight = 600,
         transform = "uppercase"
       ),
