@@ -5,13 +5,24 @@ Authors@R:
     person("Tim", "Essam", , "tim.essam@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: gtayblr offers an assortment of pre-set SI styles to adorn gt objects.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Imports: 
     dplyr,
     glitr,
     gt,
-    gtExtras
+    magrittr,
+    tidyselect
+Suggests:
+    knitr
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Remotes:
+    USAID-OHA-SI/glitr,
+    USAID-OHA-SI/glamr,
+    USAID-OHA-SI/gophr,
+BuildVignettes: false
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)

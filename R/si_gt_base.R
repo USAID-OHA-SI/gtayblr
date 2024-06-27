@@ -12,7 +12,12 @@
 #' @export
 #'
 #' @examples
-si_gt_base <- function(gt_object, header_fill = "#626672",  header_font_color = "white", table_font = "Source Sans Pro", table_font_color = "#626672", ...) {
+si_gt_base <- function(gt_object,
+                       header_fill = "#626672",
+                       header_font_color = "white",
+                       table_font = "Source Sans Pro",
+                       table_font_color = "#626672",
+                       ...) {
 
   # Test that the object entered is in fact a gt object, if not it needs to be passed through gt()
   check_gt_object(gt_object)
@@ -30,18 +35,18 @@ si_gt_base <- function(gt_object, header_fill = "#626672",  header_font_color = 
       table_body.border.bottom.color = "#d1d3d4",
       table_body.hlines.width = 0,
       heading.border.bottom.style = "none", # No lines
-      data_row.padding = px(5), # Controls squishiness of rows
-      column_labels.font.size = px(14),
-      row_group.padding = px(4),
-      source_notes.font.size = px(10),
+      data_row.padding = gt::px(5), # Controls squishiness of rows
+      column_labels.font.size = gt::px(14),
+      row_group.padding = gt::px(4),
+      source_notes.font.size = gt::px(10),
       ...
     ) %>%
     gt::tab_style(
-      style = cell_text(
+      style = gt::cell_text(
         color = header_font_color, font = gt::google_font(table_font),
         weight = 700, transform = "uppercase"
       ),
-      locations = gt::cells_column_labels(everything())
+      locations = gt::cells_column_labels(tidyselect::everything())
     ) %>%
     # Create a header that is filled in our slate color
     gt::tab_style(
@@ -50,7 +55,7 @@ si_gt_base <- function(gt_object, header_fill = "#626672",  header_font_color = 
     ) %>% # Table header --RN font is set as Libre Franklin
     gt::tab_style(
       style = gt::cell_text(
-        color = table_font_color, font = gt::google_font("Libre Franklin"), weight = 800,
+        color = table_font_color, font = gt::google_font("Libre Franklin"), weight = 750,
         transform = "uppercase"
       ),
       locations = gt::cells_title(groups = "title")

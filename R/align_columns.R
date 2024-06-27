@@ -1,4 +1,6 @@
 # Function to apply column alignments
+#' @title Align columns
+#'
 #' @description
 #' Aligns columns based on their type. Numeric columns are right aligned.
 #' Text columns are left aligned.
@@ -6,7 +8,7 @@
 #'
 #' @param gt_object
 #'
-#' @return
+#' @return An object of class `gt_tbl`.
 #' @export
 #'
 #' @examples
