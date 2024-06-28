@@ -7,7 +7,7 @@
 check_gt_object(gt_object)
 }
 \arguments{
-\item{gt_object}{}
+\item{gt_object}{An object of class \code{gt_tbl} to be checked.}
 }
 \value{
 an error message

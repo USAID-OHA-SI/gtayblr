@@ -7,7 +7,7 @@
 align_columns(gt_object)
 }
 \arguments{
-\item{gt_object}{}
+\item{gt_object}{An object of class \code{gt_tbl} to be aligned.}
 }
 \value{
 An object of class \code{gt_tbl}.

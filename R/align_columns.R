@@ -6,7 +6,7 @@
 #' Text columns are left aligned.
 #'
 #'
-#' @param gt_object
+#' @param gt_object An object of class `gt_tbl` to be aligned.
 #'
 #' @return An object of class `gt_tbl`.
 #' @export

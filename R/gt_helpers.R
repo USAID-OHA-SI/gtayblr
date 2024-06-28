@@ -4,7 +4,7 @@
 # Check for valid gt_object
 #' check_gt_object
 #'
-#' @param gt_object
+#' @param gt_object An object of class `gt_tbl` to be checked.
 #'
 #' @return an error message
 #' @export
