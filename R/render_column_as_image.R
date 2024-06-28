@@ -52,28 +52,33 @@ generate_achv_url <- function(filename, url_suffix = ".png") {
 #' Generates the HTML for embedding an image corresponding to the achievement status.
 #' Acceptable inputs are: `above_target`, `at_risk`, `concerned`, and `on_target` and `achv_legend`.
 #'
-#' @param filename The name of the image file. Acceptable inputs are `above_target`, `at_risk`, `concerned`, `on_target` and `achv_legend`.
+#' @param filenames The name of the image file. Acceptable inputs are `above_target`, `at_risk`, `concerned`, `on_target` and `achv_legend`.
 #'
 #' @return The URL string to the image.
 #' @export
 #'
 #' @examples
-#' generate_achv_html(above_target)
 #' generate_achv_html("at_risk")
-generate_achv_html <- function(filename) {
+generate_achv_html <- function(filenames) {
 
   # Define valid options
   valid_options <- c("above_target", "at_risk", "concerned", "on_target", "achv_legend")
 
-  # Convert input to a string and check against valid options
-  filename <- rlang::as_string(enexpr(filename))
-
-  if (!filename %in% valid_options) {
-    stop("Invalid input: Please enter one of 'above_target', 'at_risk', 'concerned', or 'on_target' or 'achv_legend'.")
+  # Validate inputs
+  invalid_filenames <- setdiff(filenames, valid_options)
+  if (length(invalid_filenames) > 0) {
+    cli::cli_abort(c(
+      "x Invalid input: {cli::col_red('Invalid input detected.')}",
+      "i Please enter one of the following valid options:",
+      "{cli::col_yellow(paste(valid_options, collapse = ', '))}",
+      "x You provided: {.val {invalid_filenames}}"
+    ))
   }
 
-  img_url <- generate_achv_url(filename)
-
-  glue::glue("{img_url}") %>% as.character()
+  # Generate URLs
+  img_urls <- generate_achv_url(filenames)
+  glue::glue("{img_urls}") %>% as.character()
 }
+
+
 
