@@ -1,11 +1,11 @@
-## glitr <img src='man/figures/logo_tmp.webp' align="right" height="120" />
+## glitr <img src='man/figures/logo.png' align="right" height="120" />
 SI styled gt themes to adorn your tables
 
   <!-- badges: start -->
-  [![R-CMD-check](https://github.com/USAID-OHA-SI/gtayblr/workflows/R-CMD-check/badge.svg)](https://github.com/USAID-OHA-SI/glitr/actions)
+  [![R-CMD-check](https://github.com/USAID-OHA-SI/gtayblr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/USAID-OHA-SI/gtayblr/actions/workflows/R-CMD-check.yaml)
   [![gtayblr status badge](https://usaid-oha-si.r-universe.dev/badges/gtayblr)](https://usaid-oha-si.r-universe.dev/gtayblr)
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![:name status badge](https://usaid-oha-si.r-universe.dev/badges/:name)](https://usaid-oha-si.r-universe.dev/)
+  [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+  [![:name status badge](https://usaid-oha-si.r-universe.dev/badges/:name)](https://usaid-oha-si.r-universe.dev/)
   <!-- badges: end -->
 
 ### OHA SI GT Themes
