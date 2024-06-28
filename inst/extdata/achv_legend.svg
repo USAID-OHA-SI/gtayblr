@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 242.3 23.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #697ebc;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .8px;
+      }
+
+      .cls-2 {
+        fill: #f8a27e;
+      }
+
+      .cls-5 {
+        fill: #191919;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: SourceSansPro-Regular, 'Source Sans Pro';
+        font-size: 10px;
+      }
+
+      .cls-3 {
+        fill: #5bb5d5;
+      }
+
+      .cls-4 {
+        fill: #fbdc99;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="60.9" y=".5" width="59.8" height="22.2" rx="2.3" ry="2.3"/>
+  <rect class="cls-3" x="120.7" y=".5" width="59.8" height="22.2" rx="2.3" ry="2.3"/>
+  <rect class="cls-1" x="180.5" y=".5" width="59.8" height="22.2" rx="2.3" ry="2.3"/>
+  <rect class="cls-2" x="1.1" y=".5" width="59.8" height="22.2" rx="2.3" ry="2.3"/>
+  <text class="cls-5" transform="translate(6.1 14.2)"><tspan x="0" y="0">CONCERNED</tspan></text>
+  <text class="cls-5" transform="translate(74.9 14.2)"><tspan x="0" y="0">AT RISK</tspan></text>
+  <text class="cls-5" transform="translate(129.6 14.2)"><tspan x="0" y="0">ON TARGET</tspan></text>
+  <text class="cls-6" transform="translate(182.4 14.2)"><tspan x="0" y="0">ABOVE TARGET</tspan></text>
+</svg>
